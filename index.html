@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Александр Лимин — Ведущий на выпускной · Красноярск и Красноярский край</title>
-<meta name="description" content="Профессиональный ведущий на выпускной в Красноярске и Красноярском крае. 7 лет опыта, 190+ мероприятий. Индивидуальный сценарий, пакеты от 60 000 ₽.">
+<meta name="theme-color" content="#0C0C0C">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Александр Лимин — Ведущий на ваше мероприятие · Красноярск и край</title>
+<meta name="description" content="Профессиональный ведущий на свадьбы и мероприятия в Красноярске и Красноярском крае. 5 лет опыта, 150+ мероприятий. Индивидуальный сценарий, пакеты от 20 000 ₽.">
 <meta property="og:title" content="Александр Лимин — Ведущий на выпускной · Красноярск">
 <meta property="og:description" content="Сделаю ваш выпускной незабываемым. Индивидуальный сценарий, 7 лет опыта, выезд по краю.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Onest:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Onest:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Onest:wght@300;400;500&display=swap"></noscript>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -35,7 +38,7 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
-  font-family: 'Onest', sans-serif;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   background: var(--ink);
   color: var(--fog);
   overflow-x: hidden;
@@ -47,7 +50,7 @@ body {
 @media (max-width: 768px) { .container { padding: 0 20px; } }
 
 .gold { color: var(--gold); }
-.serif { font-family: 'Cormorant Garamond', serif; }
+.serif { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; }
 
 .tag {
   display: inline-flex; align-items: center; gap: 10px;
@@ -58,7 +61,7 @@ body {
 .tag::before { content: ''; display: block; width: 28px; height: 1px; background: var(--gold); opacity: 0.7; }
 
 .h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: clamp(38px, 4.5vw, 60px);
   font-weight: 300; line-height: 1.08;
   letter-spacing: -0.01em;
@@ -88,7 +91,7 @@ body {
   backdrop-filter: blur(12px);
 }
 .nav-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: 19px; font-weight: 400; letter-spacing: 0.04em;
   color: var(--gold); text-decoration: none; margin-right: auto;
 }
@@ -105,7 +108,7 @@ body {
 .nav-btn {
   display: inline-flex; align-items: center; gap: 6px;
   background: var(--gold); color: var(--ink);
-  font-family: 'Onest', sans-serif;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 12px; font-weight: 500; letter-spacing: 0.07em;
   text-transform: uppercase; text-decoration: none;
   padding: 10px 20px; border-radius: var(--r);
@@ -236,7 +239,7 @@ body {
   z-index: 3; text-align: right;
 }
 .hpc-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: 18px; font-weight: 300; letter-spacing: 0.04em;
   color: rgba(255,255,255,0.85); display: block; margin-bottom: 4px;
 }
@@ -326,7 +329,7 @@ body {
 .hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
 
 .hero-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: clamp(56px, 7.5vw, 96px);
   font-weight: 300; line-height: 0.95;
   letter-spacing: -0.02em;
@@ -359,7 +362,7 @@ body {
 }
 .proof-item:last-child { border-right: none; }
 .proof-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: 28px; font-weight: 300;
   color: var(--gold); line-height: 1;
   margin-bottom: 2px;
@@ -371,7 +374,7 @@ body {
 .btn-gold {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--gold); color: var(--ink);
-  font-family: 'Onest', sans-serif;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 13px; font-weight: 500; letter-spacing: 0.06em;
   text-transform: uppercase; text-decoration: none;
   padding: 15px 30px; border-radius: var(--r); border: none; cursor: pointer;
@@ -382,7 +385,7 @@ body {
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 8px;
   background: transparent; color: var(--fog);
-  font-family: 'Onest', sans-serif;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 13px; font-weight: 400; letter-spacing: 0.04em;
   text-decoration: none;
   padding: 14px 26px;
@@ -432,7 +435,7 @@ body {
   position: relative;
 }
 .how-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: 52px; font-weight: 300;
   color: rgba(200,168,75,0.18); line-height: 1;
   margin-bottom: 16px;
@@ -542,7 +545,7 @@ body {
 }
 .geo-text { flex: 1; }
 .geo-text h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: clamp(28px, 3.5vw, 44px);
   font-weight: 300; line-height: 1.15;
   margin-bottom: 16px;
@@ -667,7 +670,7 @@ body {
 
 .pc-tier { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute); margin-bottom: 14px; }
 .pc-price {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: 50px; font-weight: 300;
   color: var(--gold); line-height: 1; margin-bottom: 2px;
 }
@@ -688,7 +691,7 @@ body {
 .btn-pc {
   display: block; width: 100%; text-align: center;
   padding: 13px 16px;
-  font-family: 'Onest', sans-serif;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 12px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase;
   border-radius: var(--r); text-decoration: none; cursor: pointer; border: none;
   transition: all 0.2s;
@@ -770,7 +773,7 @@ body {
 .faq-q {
   width: 100%; text-align: left; padding: 18px 20px;
   background: var(--ink3); color: var(--fog);
-  font-family: 'Onest', sans-serif;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 14px; font-weight: 400; line-height: 1.4;
   border: none; cursor: pointer;
   display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
@@ -848,7 +851,7 @@ body {
   background: var(--ink3);
   border: 1px solid rgba(200,168,75,0.15);
   border-radius: var(--r);
-  color: var(--fog); font-family: 'Onest', sans-serif;
+  color: var(--fog); font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 14px; padding: 13px 15px; outline: none; width: 100%;
   transition: border-color 0.2s;
 }
@@ -893,7 +896,7 @@ footer {
   flex-wrap: wrap;
 }
 .footer-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-size: 17px; color: var(--gold); text-decoration: none;
 }
 .footer-copy { font-size: 12px; color: var(--mute); }
@@ -907,6 +910,8 @@ footer {
   .footer-nav { justify-content: center; }
 }
 </style>
+  <link rel="preload" as="image" href="hero-person-desk.jpg" media="(min-width: 861px)">
+  <link rel="preload" as="image" href="hero-person-mob.jpg" media="(max-width: 860px)">
 </head>
 <body>
 
@@ -940,7 +945,7 @@ footer {
 
   <!-- Фон: размытый spotlight (публика + атмосфера) -->
   <div class="hero-bg" aria-hidden="true">
-    <img src="img/bg-blur.jpg" alt="" loading="eager" />
+    <img src="bg-blur.jpg" alt="" loading="eager" />
   </div>
 
   <div class="hero-split">
@@ -948,27 +953,27 @@ footer {
     <!-- ЛЕВАЯ: текст -->
     <div class="hero-left">
       <div class="hero-left-inner">
-        <div class="hero-eyebrow">Ведущий на выпускной · Красноярск и край</div>
+        <div class="hero-eyebrow">Ведущий на Ваше мероприятие · Красноярск и край</div>
         <h1 class="hero-name">
           <span>Александр</span>
           <em>Лимин</em>
         </h1>
         <span class="hero-role">Ведущий вашего мероприятия</span>
         <p class="hero-lead">
-          Сделаю ваш выпускной <strong>незабываемым</strong> — с живой энергией,
+          Сделаю ваше мероприятие <strong>незабываемым</strong> — с живой энергией,
           индивидуальным сценарием и полным контролем вечера от начала до конца.
         </p>
         <div class="hero-proof">
           <div class="proof-item">
-            <div class="proof-num">7</div>
+            <div class="proof-num">5</div>
             <div class="proof-lbl">лет опыта</div>
           </div>
           <div class="proof-item">
-            <div class="proof-num">190+</div>
+            <div class="proof-num">150+</div>
             <div class="proof-lbl">мероприятий</div>
           </div>
           <div class="proof-item">
-            <div class="proof-num">120</div>
+            <div class="proof-num">90</div>
             <div class="proof-lbl">свадеб</div>
           </div>
         </div>
@@ -985,12 +990,12 @@ footer {
           </a>
           <a href="tel:+79831595760" class="btn-ghost">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.8 9.5c-.4-.4-1-.7-1.5-.7s-1.1.3-1.5.7l-.4.5c-.9-.5-1.7-1.2-2.4-2C5.3 7.2 4.6 6.4 4.1 5.5l.4-.4c.8-.8.8-2.1 0-3L3.4 1c-.4-.4-1-.7-1.5-.7s-1 .3-1.5.7L.2 1.2C-.2 2.1.1 3.5 1.1 5c.9 1.4 2.2 2.8 3.6 4.2S7.6 11.5 9 12.4c1.5 1 2.9 1.3 3.8.9l.3-.3c.8-.8.8-2.1 0-3l-1.3-1.5z" fill="currentColor"/></svg>
-            +7 983 159-57-60
+            +7 913 582-95-33
           </a>
         </div>
         <p class="hero-urgency">
           <span class="live-dot"></span>
-          Даты выпускных 2025 разбирают уже сейчас — проверьте свою дату
+          Свадебный сезон 2026 не за горами - успейте забронировать свою дату
         </p>
       </div>
     </div>
@@ -998,12 +1003,12 @@ footer {
     <!-- ПРАВАЯ: ведущий spotlight, полный рост -->
     <div class="hero-right">
       <img class="hero-person desk-only"
-        src="img/hero-person-desk.jpg"
+        src="hero-person-desk.jpg"
         alt="Александр Лимин — ведущий на выпускном"
         loading="eager"
       />
       <img class="hero-person mob-only"
-        src="img/hero-person-mob.jpg"
+        src="hero-person-mob.jpg"
         alt="Александр Лимин — ведущий"
         loading="eager"
       />
@@ -1026,7 +1031,7 @@ footer {
     <div class="how-grid">
       <div class="how-step sr">
         <div class="how-num">01</div>
-        <div class="how-title">Звонок или встреча</div>
+        <div class="how-title">Звонок, затем встреча</div>
         <p class="how-text">Обсуждаем дату, площадку, пожелания. Отвечаю на все вопросы и предлагаю подходящий пакет.</p>
       </div>
       <div class="how-step sr sr-d1">
@@ -1037,7 +1042,7 @@ footer {
       <div class="how-step sr sr-d2">
         <div class="how-num">03</div>
         <div class="how-title">Подготовка сценария</div>
-        <p class="how-text">Пишу индивидуальный сценарий под ваш класс, согласовываю с организаторами, прорабатываю детали.</p>
+        <p class="how-text">Пишу индивидуальный сценарий под ваше мероприятие, согласовываю с организаторами, прорабатываю детали.</p>
       </div>
       <div class="how-step sr sr-d3">
         <div class="how-num">04</div>
@@ -1100,7 +1105,7 @@ footer {
       </div>
       <div class="about-photo-wrap sr">
         <div class="about-photo">
-          <img src="img/about-photo.jpg"
+          <img src="about-photo.jpg"
             alt="Александр Лимин — ведущий"
             loading="lazy"
             style="object-position: center top;" />
@@ -1176,8 +1181,8 @@ footer {
     <div class="pricing-grid">
       <div class="price-card sr">
         <div class="pc-tier">Базовый</div>
-        <div class="pc-price">60 000</div>
-        <div class="pc-period">₽ · 6 часов</div>
+        <div class="pc-price">От 20 000</div>
+        <div class="pc-period">₽ · 4 часа</div>
         <div class="pc-divider"></div>
         <ul class="pc-features">
           <li>Профессиональный ведущий</li>
@@ -1192,8 +1197,8 @@ footer {
       <div class="price-card hot sr sr-d1">
         <div class="hot-badge">Популярный выбор</div>
         <div class="pc-tier">Комплект</div>
-        <div class="pc-price">80 000</div>
-        <div class="pc-period">₽ · 6 часов</div>
+        <div class="pc-price">От 35 000</div>
+        <div class="pc-period">₽ · 4 часа</div>
         <div class="pc-divider"></div>
         <ul class="pc-features">
           <li>Ведущий + профессиональный DJ</li>
@@ -1208,8 +1213,8 @@ footer {
 
       <div class="price-card sr sr-d2">
         <div class="pc-tier">Под ключ</div>
-        <div class="pc-price">100 000</div>
-        <div class="pc-period">₽ · 6 часов</div>
+        <div class="pc-price">От 50 000</div>
+        <div class="pc-period">₽ · 4 часа</div>
         <div class="pc-divider"></div>
         <ul class="pc-features">
           <li>Ведущий + DJ</li>
@@ -1320,7 +1325,7 @@ footer {
           <span>Что если что-то пойдёт не по плану?</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">Это моя работа — гасить любые накладки незаметно для гостей. За 7 лет научился импровизировать. У меня всегда есть план Б по технике, тайммингу и конкурсам.</div>
+        <div class="faq-a">Это моя работа — гасить любые накладки незаметно для гостей. За 5 лет научился импровизировать. У меня всегда есть план Б по технике, тайммингу и конкурсам.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">
@@ -1348,10 +1353,10 @@ footer {
             </div>
             <div>
               <div class="ch-label">Телефон</div>
-              <div class="ch-val">+7 983 159-57-60</div>
+              <div class="ch-val">+7 913 582-95-33</div>
             </div>
           </a>
-          <a href="https://t.me/" class="ch">
+          <a href="https://t.me/Vedushchiy_LiminAlexandr" class="ch">
             <div class="ch-icon">
               <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
             </div>
@@ -1360,7 +1365,7 @@ footer {
               <div class="ch-val">Написать в мессенджер</div>
             </div>
           </a>
-          <a href="https://vk.com/" class="ch">
+          <a href="https://vk.com/Limin_Alexandr" class="ch">
             <div class="ch-icon">
               <svg viewBox="0 0 24 24"><path d="M2 2h20v20H2z" fill="none" stroke="none"/><path d="M21 7h-3.5l-2 4.5L13.5 7H10l3.5 7.5L10 21h3.5l2-4 2 4H21l-3.5-7L21 7z"/></svg>
             </div>
@@ -1404,7 +1409,7 @@ footer {
 <footer>
   <div class="footer-inner">
     <a href="#" class="footer-logo">Александр Лимин</a>
-    <span class="footer-copy">© 2026 · Ведущий на выпускной · Красноярск и Красноярский край</span>
+    <span class="footer-copy">© 2026 · Ведущий на ваше мероприятие · Красноярск и Красноярский край</span>
     <nav class="footer-nav">
       <a href="#">Конфиденциальность</a>
       <a href="tel:+79831595760">Позвонить</a>
