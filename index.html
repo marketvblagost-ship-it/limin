@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0F172A">
-<title>Ведущий на свадьбу, корпоратив и выпускной в Красноярске — Александр Лимин</title>
-<meta name="description" content="Ведущий Александр Лимин проводит свадьбы, корпоративы и выпускные в Красноярске. Индивидуальный сценарий, DJ, оборудование, договор. Проверьте свободную дату.">
-<meta property="og:title" content="Ведущий на свадьбу, корпоратив и выпускной в Красноярске — Александр Лимин">
-<meta property="og:description" content="Индивидуальный сценарий, DJ, оборудование, договор. Проверьте свободную дату.">
+<title>Александр Лимин — ведущий на выпускной, свадьбу и корпоратив в Красноярске</title>
+<meta name="description" content="Александр Лимин — ведущий мероприятий в Красноярске и Красноярском крае. Выпускные, свадьбы, корпоративы. Индивидуальный сценарий, DJ, договор, фиксированная стоимость.">
+<meta property="og:title" content="Александр Лимин — ведущий мероприятий в Красноярске">
+<meta property="og:description" content="Выпускные, свадьбы, корпоративы. Индивидуальный сценарий, DJ, договор, фиксированная стоимость.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -636,61 +636,83 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.06);paddin
   .hero-person.mob-only{display:none!important}
   .hero-person.desk-only{display:block!important}
 }
+
+
+/* TEXT UPDATE: blocks from client DOCX */
+.hero-role{font-size:clamp(22px,2.2vw,30px);font-weight:700;color:rgba(255,255,255,.92);margin:-8px 0 18px;letter-spacing:-.01em}
+.hero-urgency{display:inline-flex;align-items:center;gap:8px;margin-top:2px;color:rgba(255,255,255,.72);font-size:14px;font-weight:600}
+.hero-urgency::before{content:'●';color:var(--gold);font-size:10px}
+#about{padding:96px 0;background:var(--light)}
+.about-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.about-text p{font-size:17px;line-height:1.75;color:var(--txt2);margin-top:18px;max-width:620px}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.about-feature{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:var(--r-lg);padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.about-feature h3{font-size:16px;font-weight:800;color:var(--dark2);margin-bottom:8px}
+.about-feature p{font-size:14px;line-height:1.6;color:var(--txt2);margin:0}
+.about-photo{position:relative;border-radius:var(--r-xl);overflow:hidden;min-height:520px;background:var(--dark);box-shadow:var(--shadow)}
+.about-photo img{width:100%;height:100%;min-height:520px;object-fit:cover;object-position:center top;display:block}
+.about-quote{position:absolute;left:24px;right:24px;bottom:24px;background:rgba(15,23,42,.88);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);padding:20px;color:var(--white)}
+.about-quote p{font-size:17px;line-height:1.55;font-weight:700;margin:0 0 10px;color:var(--white)}
+.about-quote span{font-size:13px;color:rgba(255,255,255,.6)}
+#travel{padding:96px 0;background:var(--light2)}
+.travel-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:start}
+.travel-text{font-size:17px;line-height:1.75;color:var(--txt2);margin-top:18px}
+.cities-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.city-chip{background:var(--white);border:1px solid rgba(0,0,0,.07);border-radius:var(--r-md);padding:18px 20px;font-weight:700;color:var(--dark2);box-shadow:0 2px 12px rgba(0,0,0,.04);display:flex;align-items:center;gap:10px}
+.city-chip::before{content:'📍';font-size:17px}
+.video-single{max-width:860px;margin:0 auto;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-xl);overflow:hidden}
+.video-single .video-thumb{aspect-ratio:16/9}
+.price-sub{font-size:16px;color:rgba(255,255,255,.55);margin-top:12px;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.65}
+@media(max-width:860px){.about-wrap,.travel-wrap{grid-template-columns:1fr;gap:32px}.about-features{grid-template-columns:1fr}.about-photo,.about-photo img{min-height:420px}.cities-grid{grid-template-columns:1fr}.hero-role{font-size:22px}}
 </style>
 </head>
 <body>
 
-<!-- ══ NAV ══ -->
 <nav id="nav">
-  <a href="index.html" class="nav-logo">Александр <span>Лимин</span></a>
+  <a href="#hero" class="nav-logo">Александр <span>Лимин</span></a>
   <ul class="nav-links">
-    <li><a href="wedding.html">Свадьба</a></li>
-    <li><a href="corporate.html">Корпоратив</a></li>
-    <li><a href="graduation.html">Выпускной</a></li>
+    <li><a href="#about">О ведущем</a></li>
+    <li><a href="#process">Как работаем</a></li>
     <li><a href="#pricing">Стоимость</a></li>
     <li><a href="#reviews">Отзывы</a></li>
     <li><a href="#faq">Вопросы</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Проверить дату</a>
-  <button class="burger" id="burger" aria-label="Меню">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
 </nav>
 <nav id="mobile-menu">
-  <a href="wedding.html" class="mm-link">💍 Свадьба</a>
-  <a href="corporate.html" class="mm-link">🏢 Корпоратив</a>
-  <a href="graduation.html" class="mm-link">🎓 Выпускной</a>
+  <a href="#about" class="mm-link">О ведущем</a>
+  <a href="#process" class="mm-link">Как работаем</a>
   <a href="#pricing" class="mm-link">Стоимость</a>
   <a href="#reviews" class="mm-link">Отзывы</a>
   <a href="#faq" class="mm-link">Вопросы</a>
   <a href="#contact" class="mm-link mm-cta">Проверить дату →</a>
 </nav>
 
-<!-- ══ HERO ══ -->
 <section id="hero">
-  <div class="hero-bg" aria-hidden="true">
-    <img src="img/bg-blur.jpg" alt="" loading="eager">
-  </div>
+  <div class="hero-bg" aria-hidden="true"><img src="img/bg-blur.jpg" alt="" loading="eager"></div>
   <div class="hero-split">
     <div class="hero-left">
       <div class="hero-left-inner">
-        <div class="hero-eyebrow sr">Красноярск и Красноярский край</div>
-        <h1 class="hero-h1 sr sr-d1">Ведущий на <span>свадьбу, корпоратив</span> и выпускной в Красноярске</h1>
-        <p class="hero-sub sr sr-d2">Проведу мероприятие легко, современно и без неловких конкурсов — с индивидуальным сценарием, живой атмосферой и чётким контролем программы.</p>
+        <div class="hero-eyebrow sr">Ведущий на выпускной · Красноярск и край</div>
+        <h1 class="hero-h1 sr sr-d1">Александр <span>Лимин</span></h1>
+        <div class="hero-role sr sr-d1">Ведущий вашего мероприятия</div>
+        <p class="hero-sub sr sr-d2">Сделаю ваш выпускной незабываемым — с живой энергией, индивидуальным сценарием и полным контролем вечера от начала до конца.</p>
         <div class="hero-bullets sr sr-d2">
-          <span class="hero-bullet">150+ мероприятий</span>
-          <span class="hero-bullet">Свадьбы, корпоративы, выпускные</span>
-          <span class="hero-bullet">Ведущий + DJ + оборудование</span>
-          <span class="hero-bullet">Договор и фикс. стоимость</span>
+          <span class="hero-bullet">Красноярск и край</span>
+          <span class="hero-bullet">Выезд по краю</span>
+          <span class="hero-bullet">Индивидуальный сценарий</span>
+          <span class="hero-bullet">Договор · фикс. цена</span>
         </div>
         <div class="hero-btns sr sr-d3">
-          <a href="#contact" class="btn-primary">Проверить свободную дату <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a href="#formats" class="btn-secondary">Смотреть форматы</a>
+          <a href="#pricing" class="btn-primary">Узнать стоимость <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="tel:+79135829533" class="btn-secondary">+7 913 582 95 33</a>
         </div>
-        <div class="hero-stats sr sr-d4">
-          <div><div class="hero-stat-num">150+</div><div class="hero-stat-lbl">мероприятий</div></div>
+        <div class="hero-urgency sr sr-d3">Свободные даты свадеб 2026 ещё остались — проверьте свою дату</div>
+        <div class="hero-stats sr sr-d4" style="margin-top:28px">
           <div><div class="hero-stat-num">5</div><div class="hero-stat-lbl">лет опыта</div></div>
-          <div><div class="hero-stat-num">90</div><div class="hero-stat-lbl">свадеб</div></div>
+          <div><div class="hero-stat-num">190+</div><div class="hero-stat-lbl">мероприятий</div></div>
+          <div><div class="hero-stat-num">120</div><div class="hero-stat-lbl">свадеб</div></div>
         </div>
       </div>
     </div>
@@ -701,377 +723,140 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.06);paddin
   </div>
 </section>
 
-<!-- ══ FORMATS ══ -->
-<section id="formats">
+<section id="process">
   <div class="container">
-    <div class="section-tag sr">Форматы</div>
-    <h2 class="h2 sr sr-d1">Какое мероприятие<br>вы <em>планируете?</em></h2>
-    <div class="formats-grid">
-      <div class="format-card sr">
-        <div class="format-icon">💍</div>
-        <div class="format-title">Свадьба</div>
-        <div class="format-desc">Душевный вечер без пошлости и шаблонной тамады. Создам сценарий под вашу пару, удержу атмосферу и помогу гостям чувствовать себя свободно.</div>
-        <ul class="format-list">
-          <li>Индивидуальный сценарий</li>
-          <li>Деликатные интерактивы</li>
-          <li>Тайминг вечера</li>
-          <li>Гости разных возрастов</li>
-        </ul>
-        <a href="wedding.html" class="btn-outline">Подробнее о свадьбах <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-      <div class="format-card sr sr-d1">
-        <div class="format-icon">🏢</div>
-        <div class="format-title">Корпоратив</div>
-        <div class="format-desc">Динамичный праздник, где гости вовлечены, а программа не разваливается. Подходит для компаний, бизнес-встреч и крупных корпоративов.</div>
-        <ul class="format-list">
-          <li>Работа с разной аудиторией</li>
-          <li>Грамотная речь без жаргона</li>
-          <li>Импровизация</li>
-          <li>DJ и оборудование</li>
-        </ul>
-        <a href="corporate.html" class="btn-outline">Подробнее о корпоративах <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-      <div class="format-card sr sr-d2">
-        <div class="format-icon">🎓</div>
-        <div class="format-title">Выпускной</div>
-        <div class="format-desc">Праздник, который запомнят выпускники, родители и учителя. Сценарий под класс, уважительное общение с подростками и живая атмосфера.</div>
-        <ul class="format-list">
-          <li>Сценарий под школу и класс</li>
-          <li>Комфорт для всех поколений</li>
-          <li>Позитивная атмосфера</li>
-          <li>Безопасность и ответственность</li>
-        </ul>
-        <a href="graduation.html" class="btn-outline">Подробнее о выпускных <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
+    <div class="section-tag sr">Как работаем</div>
+    <h2 class="h2 sr sr-d1">От звонка до <em>незабываемого вечера</em></h2>
+    <div class="process-grid">
+      <div class="process-step sr"><div class="process-num">01</div><div class="process-title">Звонок затем встреча</div><div class="process-text">Обсуждаем дату, площадку, пожелания. Отвечаю на все вопросы и предлагаю подходящий пакет.</div></div>
+      <div class="process-step sr sr-d1"><div class="process-num">02</div><div class="process-title">Бронирование даты</div><div class="process-text">Подписываем договор, фиксируем условия. Дата зарезервирована — можно не переживать.</div></div>
+      <div class="process-step sr sr-d2"><div class="process-num">03</div><div class="process-title">Подготовка сценария</div><div class="process-text">Пишу индивидуальный сценарий под ваше мероприятие, согласовываю с организаторами, прорабатываем детали.</div></div>
+      <div class="process-step sr sr-d3"><div class="process-num">04</div><div class="process-title">Ваш вечер</div><div class="process-text">Веду вечер с полным погружением. Беру на себя всё: техника, тайминг, настроение зала.</div></div>
     </div>
   </div>
 </section>
 
-<!-- ══ VIDEO ══ -->
+<section id="about">
+  <div class="container about-wrap">
+    <div class="about-text">
+      <div class="section-tag sr">О ведущем</div>
+      <h2 class="h2 sr sr-d1">Почему выбирают <em>снова и снова</em></h2>
+      <p class="sr sr-d2">Привет, я Александр. Уже 5 лет провожу события, которые остаются в памяти. Свадьба — это один из самых главных дней в жизни молодожен, и я искренне верю, что этот праздник должен быть наполнен радостью, искренними эмоциями и теплотой.</p>
+      <p class="sr sr-d2">Я не «говорящая голова» с бумажкой. Я чувствую зал, управляю темпом и беру на себя все организационные моменты — вы просто наслаждаетесь праздником.</p>
+      <div class="about-features">
+        <div class="about-feature sr"><h3>Индивидуальный сценарий</h3><p>Никаких шаблонов. Программа пишется под ваш класс, традиции и истории.</p></div>
+        <div class="about-feature sr sr-d1"><h3>Живая энергия, не скрипт</h3><p>Управляю залом, чувствую настроение, держу темп — без заготовленных фраз.</p></div>
+        <div class="about-feature sr sr-d2"><h3>Полная ответственность за вечер</h3><p>Техника, тайминг, накладки — беру на себя. Вы отдыхаете.</p></div>
+        <div class="about-feature sr sr-d3"><h3>На связи от первого звонка</h3><p>Встреча, репетиция тайминга, координация на вечере — всё включено.</p></div>
+      </div>
+    </div>
+    <div class="about-photo sr sr-d2">
+      <img src="img/about-photo.jpg" alt="Александр Лимин на мероприятии" loading="lazy">
+      <div class="about-quote"><p>«С душой и с таким трепетом подошёл к организации нашего вечера!»</p><span>Алена Бурель, выпускной 2024</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="travel">
+  <div class="container travel-wrap">
+    <div>
+      <div class="section-tag sr">Выезд</div>
+      <h2 class="h2 sr sr-d1">Работаю по всему <em>Красноярскому краю</em></h2>
+      <p class="travel-text sr sr-d2">Провожу мероприятия не только в Красноярске, но и выезжаю в другие города и населённые пункты края. Дорога и проживание обсуждаются индивидуально.</p>
+    </div>
+    <div class="cities-grid sr sr-d2">
+      <div class="city-chip">Красноярск</div><div class="city-chip">Норильск</div><div class="city-chip">Ачинск</div><div class="city-chip">Минусинск</div><div class="city-chip">Канск</div><div class="city-chip">Железногорск</div><div class="city-chip">Лесосибирск</div><div class="city-chip">Другой город</div>
+    </div>
+  </div>
+</section>
+
 <section id="video">
   <div class="container">
     <div class="video-head sr">
-      <div class="section-tag" style="justify-content:center">Видео</div>
-      <h2 class="h2">Посмотрите, как я <em>веду мероприятия</em></h2>
-      <p class="lead">Видео скоро появится. Сейчас можно запросить примеры мероприятий в сообщении.</p>
+      <div class="section-tag" style="justify-content:center">Смотреть в деле</div>
+      <h2 class="h2">Как выглядит <em>настоящий выпускной</em></h2>
+      <p class="lead">Добавьте ссылку на YouTube или VK Видео — это самый важный блок доверия на сайте.</p>
     </div>
-    <div class="video-grid">
-      <div class="video-card sr">
-        <div class="video-thumb">
-          <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-          <span class="video-label">Свадьба</span>
-        </div>
-        <div class="video-body">
-          <div class="video-format">Свадьба</div>
-          <div class="video-title">Видео появится скоро</div>
-        </div>
+    <div class="video-single sr sr-d1">
+      <div class="video-thumb">
+        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <span class="video-label">Вставьте ссылку YouTube или VK Видео</span>
       </div>
-      <div class="video-card sr sr-d1">
-        <div class="video-thumb">
-          <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-          <span class="video-label">Корпоратив</span>
-        </div>
-        <div class="video-body">
-          <div class="video-format">Корпоратив</div>
-          <div class="video-title">Видео появится скоро</div>
-        </div>
+      <div class="video-body">
+        <div class="video-format">Видео</div>
+        <div class="video-title">Видео с реального выпускного</div>
       </div>
-      <div class="video-card sr sr-d2">
-        <div class="video-thumb">
-          <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-          <span class="video-label">Выпускной</span>
-        </div>
-        <div class="video-body">
-          <div class="video-format">Выпускной</div>
-          <div class="video-title">Видео появится скоро</div>
-        </div>
-      </div>
-    </div>
-    <div class="video-cta sr">
-      <a href="https://t.me/Vedushchiy_LiminAlexandr" class="btn-outline" style="color:var(--white);border-color:rgba(255,255,255,0.25)">Запросить видео →</a>
     </div>
   </div>
 </section>
 
-<!-- ══ WHY ══ -->
-<section id="why">
-  <div class="container">
-    <div class="why-head">
-      <div class="section-tag sr">Почему со мной спокойно</div>
-      <h2 class="h2 sr sr-d1">6 причин выбрать <em>Александра</em></h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-card sr"><div class="why-icon">🚫</div><div class="why-title">Без неловкости</div><div class="why-text">Без пошлых конкурсов, устаревших шуток и давления на гостей.</div></div>
-      <div class="why-card sr sr-d1"><div class="why-icon">📝</div><div class="why-title">Индивидуальный сценарий</div><div class="why-text">Программа собирается под формат, аудиторию и пожелания — никаких шаблонов.</div></div>
-      <div class="why-card sr sr-d2"><div class="why-icon">⏱️</div><div class="why-title">Чёткий тайминг</div><div class="why-text">Поздравления, интерактивы, музыка и паузы идут ровно. Без затяжек и хаоса.</div></div>
-      <div class="why-card sr sr-d1"><div class="why-icon">🎧</div><div class="why-title">DJ и оборудование</div><div class="why-text">В команде профессиональный DJ и качественное оборудование.</div></div>
-      <div class="why-card sr sr-d2"><div class="why-icon">⚡</div><div class="why-title">Импровизация</div><div class="why-text">Неожиданные ситуации переводятся в позитив. За 5 лет видел всякое.</div></div>
-      <div class="why-card sr sr-d3"><div class="why-icon">🎤</div><div class="why-title">Грамотная речь</div><div class="why-text">Без жаргона, слов-паразитов и хаоса в подаче. Чисто, чётко, тепло.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ PRICING ══ -->
 <section id="pricing">
   <div class="container">
     <div class="pricing-head sr">
       <div class="section-tag" style="justify-content:center">Стоимость</div>
-      <h2 class="h2">Стоимость <em>проведения</em></h2>
-      <p>Точная стоимость зависит от даты, длительности, площадки и комплектации.</p>
+      <h2 class="h2">Прозрачные <em>пакеты</em></h2>
+      <p class="price-sub">Все пакеты включают индивидуальный сценарий и личную встречу. Цена фиксируется в договоре — без скрытых доплат.</p>
     </div>
-    <div class="pricing-tabs sr sr-d1">
-      <button class="ptab active" data-tab="wedding">💍 Свадьба</button>
-      <button class="ptab" data-tab="corporate">🏢 Корпоратив</button>
-      <button class="ptab" data-tab="graduation">🎓 Выпускной</button>
-    </div>
-
-    <!-- Свадьба -->
-    <div class="pricing-panels">
-      <div class="pricing-panel active" id="panel-wedding">
-        <div class="price-card sr">
-          <div class="price-tier">Ведущий</div>
-          <div class="price-amount">от 35 000<span> ₽</span></div>
-          <div class="price-note">Базовый пакет</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Сценарий под пару</li>
-            <li>Ведение вечера</li>
-            <li>Деликатные интерактивы</li>
-            <li>Контроль тайминга</li>
-            <li>Личная встреча</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
-        <div class="price-card popular sr sr-d1">
-          <div class="popular-badge">Популярный выбор</div>
-          <div class="price-tier">Ведущий + DJ</div>
-          <div class="price-amount">от 50 000<span> ₽</span></div>
-          <div class="price-note">Рекомендуемый пакет</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Сценарий под пару</li>
-            <li>Ведение вечера</li>
-            <li>Профессиональный DJ</li>
-            <li>Музыкальное сопровождение</li>
-            <li>Деликатные интерактивы</li>
-            <li>Контроль тайминга</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
-        <div class="price-card sr sr-d2">
-          <div class="price-tier">Под ключ</div>
-          <div class="price-amount">от 70 000<span> ₽</span></div>
-          <div class="price-note">Полная комплектация</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Ведущий + DJ</li>
-            <li>Профессиональный звук</li>
-            <li>Световое оборудование</li>
-            <li>Полная техническая подготовка</li>
-            <li>Координация площадки</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
+    <div class="pricing-panel active" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div class="price-card sr">
+        <div class="price-tier">Базовый</div><div class="price-amount">25 000<span> ₽</span></div><div class="price-note">5 часов</div><div class="price-divider"></div>
+        <ul class="price-features"><li>Профессиональный ведущий</li><li>Индивидуальный сценарий</li><li>Конкурсы и интерактивы</li><li>Торжественная часть</li><li>Координация вечера</li></ul>
+        <a href="#contact" class="btn-price">Выбрать пакет</a>
       </div>
-
-      <!-- Корпоратив -->
-      <div class="pricing-panel" id="panel-corporate">
-        <div class="price-card sr">
-          <div class="price-tier">Ведущий</div>
-          <div class="price-amount">от 30 000<span> ₽</span></div>
-          <div class="price-note">Базовый пакет</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Программа под компанию</li>
-            <li>Формат события</li>
-            <li>Грамотная речь</li>
-            <li>Импровизация</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
-        <div class="price-card popular sr sr-d1">
-          <div class="popular-badge">Популярный выбор</div>
-          <div class="price-tier">Ведущий + DJ</div>
-          <div class="price-amount">от 45 000<span> ₽</span></div>
-          <div class="price-note">Рекомендуемый пакет</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Ведение мероприятия</li>
-            <li>Профессиональный DJ</li>
-            <li>Музыка и интерактивы</li>
-            <li>Работа с разной аудиторией</li>
-            <li>Контроль программы</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
-        <div class="price-card sr sr-d2">
-          <div class="price-tier">Под ключ</div>
-          <div class="price-amount">от 65 000<span> ₽</span></div>
-          <div class="price-note">Полная комплектация</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Ведущий + DJ</li>
-            <li>Профессиональное оборудование</li>
-            <li>Звук и свет</li>
-            <li>Полная подготовка</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
+      <div class="price-card popular sr sr-d1">
+        <div class="popular-badge">Популярный выбор</div><div class="price-tier">Комплект</div><div class="price-amount">40 000<span> ₽</span></div><div class="price-note">5 часов</div><div class="price-divider"></div>
+        <ul class="price-features"><li>Ведущий + профессиональный DJ</li><li>Индивидуальный сценарий</li><li>Танцевальная программа</li><li>Подбор музыки под аудиторию</li><li>Конкурсы и интерактивы</li><li>Торжественная и танцевальная части</li></ul>
+        <a href="#contact" class="btn-price">Выбрать пакет</a>
       </div>
-
-      <!-- Выпускной -->
-      <div class="pricing-panel" id="panel-graduation">
-        <div class="price-card sr">
-          <div class="price-tier">Торжественная часть</div>
-          <div class="price-amount">от 25 000<span> ₽</span></div>
-          <div class="price-note">Официальная часть</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Торжественная часть</li>
-            <li>Поздравления</li>
-            <li>Сценарий под школу</li>
-            <li>Работа с классом</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
-        <div class="price-card popular sr sr-d1">
-          <div class="popular-badge">Популярный выбор</div>
-          <div class="price-tier">Выпускной вечер</div>
-          <div class="price-amount">от 40 000<span> ₽</span></div>
-          <div class="price-note">Рекомендуемый пакет</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Ведение всего вечера</li>
-            <li>Интерактивы и конкурсы</li>
-            <li>Работа с классом и родителями</li>
-            <li>Индивидуальный сценарий</li>
-            <li>Позитивная атмосфера</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
-        <div class="price-card sr sr-d2">
-          <div class="price-tier">Под ключ</div>
-          <div class="price-amount">от 60 000<span> ₽</span></div>
-          <div class="price-note">Полная комплектация</div>
-          <div class="price-divider"></div>
-          <ul class="price-features">
-            <li>Ведущий + DJ</li>
-            <li>Профессиональный звук</li>
-            <li>Световое оборудование</li>
-            <li>Полная подготовка</li>
-          </ul>
-          <a href="#contact" class="btn-price">Проверить дату</a>
-        </div>
+      <div class="price-card sr sr-d2">
+        <div class="price-tier">Под ключ</div><div class="price-amount">70 000<span> ₽</span></div><div class="price-note">5 часов</div><div class="price-divider"></div>
+        <ul class="price-features"><li>Ведущий + DJ</li><li>Профессиональный звук</li><li>Световое оборудование</li><li>Полная техническая подготовка</li><li>Индивидуальный сценарий</li><li>Координация площадки</li></ul>
+        <a href="#contact" class="btn-price">Выбрать пакет</a>
       </div>
     </div>
-    <p class="pricing-note">Нужна другая комплектация — обсуждается индивидуально</p>
+    <p class="pricing-note">Нужно дольше 6 часов — обсуждается индивидуально</p>
   </div>
 </section>
 
-<!-- ══ PROCESS ══ -->
-<section id="process">
-  <div class="container">
-    <div class="section-tag sr">Как всё устроено</div>
-    <h2 class="h2 sr sr-d1">Как проходит <em>подготовка</em></h2>
-    <div class="process-grid">
-      <div class="process-step sr"><div class="process-num">1</div><div class="process-title">Заявка</div><div class="process-text">Вы пишете дату, формат и количество гостей. Отвечаю быстро.</div></div>
-      <div class="process-step sr sr-d1"><div class="process-num">2</div><div class="process-title">Созвон</div><div class="process-text">Обсуждаем стиль, пожелания и особенности аудитории.</div></div>
-      <div class="process-step sr sr-d2"><div class="process-num">3</div><div class="process-title">Сценарий</div><div class="process-text">Готовлю программу под ваше событие. Согласовываем детали.</div></div>
-      <div class="process-step sr sr-d3"><div class="process-num">4</div><div class="process-title">Проведение</div><div class="process-text">В день мероприятия держу темп, атмосферу и все беру на себя.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ REVIEWS ══ -->
 <section id="reviews">
   <div class="container">
     <div class="section-tag sr">Отзывы</div>
-    <h2 class="h2 sr sr-d1">Отзывы <em>клиентов</em></h2>
-    <div class="reviews-filters sr sr-d2">
-      <button class="rfilt active" data-filter="all">Все</button>
-      <button class="rfilt" data-filter="wedding">💍 Свадьбы</button>
-      <button class="rfilt" data-filter="corporate">🏢 Корпоративы</button>
-      <button class="rfilt" data-filter="graduation">🎓 Выпускные</button>
-    </div>
+    <h2 class="h2 sr sr-d1">Что говорят <em>после праздника</em></h2>
     <div class="reviews-grid">
-      <div class="review-card sr" data-format="graduation">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">«Александр — лучший ведущий. Нам сказочно повезло с ним. Профессионал своего дела, вежливый, организованность на высшем уровне, чувство юмора 100%. Только его и будем советовать!»</p>
-        <div class="review-footer">
-          <div class="review-avatar">АБ</div>
-          <div><div class="review-name">Алена Бурель</div><div class="review-meta">2024</div></div>
-          <span class="review-format-tag">Выпускной</span>
-        </div>
-      </div>
-      <div class="review-card sr sr-d1" data-format="wedding">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">«Чувствовалась лёгкость — вроде и торжество волнительное, но без чрезмерной напыщенности. Гости в восторге вообще! В памяти теперь надолго наш самый значимый день. Спасибо, что с душой провели его!»</p>
-        <div class="review-footer">
-          <div class="review-avatar">ТС</div>
-          <div><div class="review-name">Татьяна Сецко</div><div class="review-meta">2024</div></div>
-          <span class="review-format-tag">Свадьба</span>
-        </div>
-      </div>
-      <div class="review-card sr sr-d2" data-format="corporate">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">«Хорошего ведущего очень тяжело найти. Мероприятие провели на высшем уровне, интересные конкурсы, все наши пожелания учтены на 100%. Праздник прошёл великолепно!»</p>
-        <div class="review-footer">
-          <div class="review-avatar">МК</div>
-          <div><div class="review-name">Михаил Кириленко</div><div class="review-meta">2024</div></div>
-          <span class="review-format-tag">Корпоратив</span>
-        </div>
-      </div>
-      <div class="review-card sr" data-format="wedding">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">«Александр Лимин был приятен и вежлив. Учёл все пожелания, чётко распределил время на конкурсы и отдых. Грамотно строит речь и умеет шутить. День прошёл в прекрасном настроении!»</p>
-        <div class="review-footer">
-          <div class="review-avatar">АБ</div>
-          <div><div class="review-name">Алёночка Боярчук</div><div class="review-meta">2023</div></div>
-          <span class="review-format-tag">Свадьба</span>
-        </div>
-      </div>
+      <div class="review-card sr"><div class="review-stars">★★★★★</div><p class="review-text">«Александр — лучший ведущий. Нам сказочно повезло с ним. Профессионал своего дела, вежливый, организованность на высшем уровне, чувство юмора 100%. Только его и будем советовать!»</p><div class="review-footer"><div class="review-avatar">АБ</div><div><div class="review-name">Алена Бурель</div><div class="review-meta">Выпускной · 2024</div></div></div></div>
+      <div class="review-card sr sr-d1"><div class="review-stars">★★★★★</div><p class="review-text">«Чувствовалась лёгкость — вроде и торжество волнительное, но без чрезмерной напыщенности. Гости в восторге вообще! В памяти теперь надолго наш самый значимый день. Спасибо, что с душой провели его!»</p><div class="review-footer"><div class="review-avatar">ТС</div><div><div class="review-name">Татьяна Сецко</div><div class="review-meta">Торжество · 2024</div></div></div></div>
+      <div class="review-card sr sr-d2"><div class="review-stars">★★★★★</div><p class="review-text">«Хорошего ведущего очень тяжело найти. Мероприятие провели на высшем уровне, интересные конкурсы, все наши пожелания учтены на 100%. Праздник прошёл великолепно!»</p><div class="review-footer"><div class="review-avatar">МК</div><div><div class="review-name">Михаил Кириленко</div><div class="review-meta">Корпоратив · 2024</div></div></div></div>
+      <div class="review-card sr"><div class="review-stars">★★★★★</div><p class="review-text">«Александр Лимин был приятен и вежлив. Учёл все пожелания, чётко распределил время на конкурсы и отдых. Грамотно строит речь и умеет шутить. День прошёл в прекрасном настроении!»</p><div class="review-footer"><div class="review-avatar">АБ</div><div><div class="review-name">Алёночка Боярчук</div><div class="review-meta">Свадьба · 2023</div></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ══ FAQ ══ -->
 <section id="faq">
   <div class="container">
     <div class="section-tag sr">Вопросы</div>
     <h2 class="h2 sr sr-d1">Часто <em>спрашивают</em></h2>
     <div class="faq-grid">
-      <div class="faq-item"><button class="faq-q">За сколько времени лучше бронировать дату?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Популярные даты (июнь, май) расходятся за 3–4 месяца. Рекомендую обращаться в феврале–марте. Если дата горит — звоните, уточним.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Работаете ли по договору?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Да, всегда. Договор фиксирует дату, состав услуг и стоимость. Никаких устных договорённостей — всё официально.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Можно ли без пошлых конкурсов?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Можно и нужно. Я специально избегаю устаревших форматов. Программа собирается под вашу пару и аудиторию — без давления и неловкости.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Есть ли DJ и оборудование?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Да, в команде профессиональный DJ и качественное оборудование. Доступно в пакетах «Ведущий + DJ» и «Под ключ».</div></div></div>
-      <div class="faq-item"><button class="faq-q">Можно ли провести только торжественную часть?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Да, особенно актуально для выпускных. Пакет «Торжественная часть» — это официальная программа, поздравления и сценарий без вечерней части.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Сколько длится программа?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Зависит от формата и пакета. Базово от 4 часов. Нужно дольше — обсуждается индивидуально без проблем.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Как рассчитывается стоимость?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Зависит от даты, длительности, формата и комплектации. Цена фиксируется в договоре — без скрытых доплат. Пишите, рассчитаем конкретно под вас.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Как далеко заранее нужно бронировать?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Популярные даты (июнь, конец мая) расходятся за 3–4 месяца. Рекомендую обращаться в феврале–марте. Если дата горит — звоните, уточним.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Есть ли у вас опыт именно с выпускными?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Да, выпускные — отдельный и любимый формат. Понимаю специфику: торжественная часть с вручением аттестатов, живая атмосфера, разница интересов гостей разных поколений.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Выезжаете ли за пределы Красноярска?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Да, работаю по всему Красноярскому краю. Дорога и при необходимости проживание оговариваются отдельно — обычно это символичная сумма или входит в пакет.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Можно ли подстроить программу под наши пожелания?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Обязательно. Сценарий пишется с нуля под ваш класс. Я заранее узнаю имена, традиции, шутки — чтобы программа была личной, а не шаблонной.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Что если что-то пойдёт не по плану?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Это моя работа — гасить любые накладки незаметно для гостей. За 7 лет научился импровизировать. У меня всегда есть план Б по технике, таймингу и конкурсам.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Что входит в стоимость, есть ли скрытые расходы?<span class="faq-icon"><svg viewBox="0 0 12 12" stroke-width="1.8" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Всё что описано в пакете — включено. Цена фиксируется в договоре. Единственное, что обсуждается отдельно — выезд за пределы Красноярска.</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ══ CONTACT ══ -->
 <section id="contact">
   <div class="container">
     <div class="contact-wrap">
       <div class="contact-left sr">
-        <div class="section-tag">Контакты</div>
-        <h2 class="h2" style="color:var(--white);margin-bottom:16px">Проверим вашу дату<br>и <em>подберём формат</em></h2>
-        <p>Напишите дату, формат мероприятия и количество гостей — Александр подскажет, свободна ли дата и какой пакет подойдёт лучше.</p>
+        <div class="section-tag">Связаться</div>
+        <h2 class="h2" style="color:var(--white);margin-bottom:16px">Проверим <em>вашу дату</em></h2>
+        <p>Оставьте контакт — перезвоню в течение часа, обсудим программу и зафиксирую дату. Хорошие даты уходят быстро.</p>
         <div class="contact-links">
-          <a href="tel:+79135829533" class="contact-link">
-            <div class="contact-link-icon">📞</div>
-            <div><div class="contact-link-label">Телефон</div><div class="contact-link-val">+7 913 582-95-33</div></div>
-          </a>
-          <a href="https://t.me/Vedushchiy_LiminAlexandr" class="contact-link" target="_blank">
-            <div class="contact-link-icon">✈️</div>
-            <div><div class="contact-link-label">Telegram</div><div class="contact-link-val">Написать в мессенджер</div></div>
-          </a>
-          <a href="https://vk.com/Limin_Alexandr" class="contact-link" target="_blank">
-            <div class="contact-link-icon">💬</div>
-            <div><div class="contact-link-label">ВКонтакте</div><div class="contact-link-val">Написать в сообщения</div></div>
-          </a>
+          <a href="tel:+79135829533" class="contact-link"><div class="contact-link-icon">📞</div><div><div class="contact-link-label">Телефон</div><div class="contact-link-val">+7 913 582 95 33</div></div></a>
+          <a href="https://t.me/Vedushchiy_LiminAlexandr" class="contact-link" target="_blank"><div class="contact-link-icon">✈️</div><div><div class="contact-link-label">Telegram</div><div class="contact-link-val">Написать в мессенджер</div></div></a>
+          <a href="https://vk.ru/limin_alexandr" class="contact-link" target="_blank"><div class="contact-link-icon">💬</div><div><div class="contact-link-label">ВКонтакте</div><div class="contact-link-val">Написать ВКонтакте</div></div></a>
         </div>
       </div>
       <div class="contact-form sr sr-d1">
@@ -1079,122 +864,41 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.06);paddin
         <p>Отвечу на вопросы и подберу пакет под вашу задачу</p>
         <form id="contactForm">
           <div class="form-grid">
-            <div class="form-field"><label class="form-label">Ваше имя</label><input class="form-input" type="text" name="name" placeholder="Как вас зовут?" required></div>
-            <div class="form-field"><label class="form-label">Телефон / Telegram *</label><input class="form-input" type="text" name="phone" placeholder="+7 или @username" required></div>
-            <div class="form-field"><label class="form-label">Дата мероприятия</label><input class="form-input" type="date" name="date"></div>
-            <div class="form-field"><label class="form-label">Формат</label>
-              <select class="form-select" name="format">
-                <option value="">Выберите формат</option>
-                <option value="wedding">Свадьба</option>
-                <option value="corporate">Корпоратив</option>
-                <option value="graduation">Выпускной</option>
-                <option value="other">Другое</option>
-              </select>
-            </div>
-            <div class="form-field"><label class="form-label">Количество гостей</label><input class="form-input" type="text" name="guests" placeholder="Примерно"></div>
-            <div class="form-field"><label class="form-label">Город / площадка</label><input class="form-input" type="text" name="city" placeholder="Красноярск"></div>
-            <div class="form-field full"><label class="form-label">Комментарий</label><textarea class="form-textarea" name="comment" placeholder="Коротко о мероприятии..."></textarea></div>
+            <div class="form-field"><label class="form-label">Ваше имя</label><input class="form-input" type="text" name="name" placeholder="Ваше имя" required></div>
+            <div class="form-field"><label class="form-label">Номер телефона *</label><input class="form-input" type="text" name="phone" placeholder="+7 или @username" required></div>
+            <div class="form-field"><label class="form-label">Дата выпускного</label><input class="form-input" type="date" name="date"></div>
+            <div class="form-field"><label class="form-label">Город / район</label><input class="form-input" type="text" name="city" placeholder="Красноярск"></div>
+            <div class="form-field full"><label class="form-label">Коротко о мероприятии</label><textarea class="form-textarea" name="comment" placeholder="Необязательно"></textarea></div>
           </div>
-          <button type="submit" class="form-submit">Проверить дату →</button>
+          <button type="submit" class="form-submit">Отправить заявку →</button>
           <p class="form-agree">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
         </form>
-        <div class="form-success" id="formSuccess">
-          <h4>Заявка принята! ✓</h4>
-          <p>Спасибо! Александр свяжется с вами и подскажет, свободна ли дата.</p>
-        </div>
+        <div class="form-success" id="formSuccess"><h4>Заявка принята!</h4><p>Перезвоню вам в течение часа. Если срочно — напишите в Telegram.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ FOOTER ══ -->
 <footer>
   <div class="container">
     <div class="footer-inner">
       <div class="footer-logo">Александр <span>Лимин</span></div>
-      <p class="footer-copy">© 2026 · Ведущий на мероприятия · Красноярск и край</p>
-      <nav class="footer-nav">
-        <a href="wedding.html">Свадьба</a>
-        <a href="corporate.html">Корпоратив</a>
-        <a href="graduation.html">Выпускной</a>
-        <a href="tel:+79135829533">Позвонить</a>
-      </nav>
+      <p class="footer-copy">© 2026 · Ведущий на ваше мероприятие · Красноярск и Красноярский край</p>
+      <nav class="footer-nav"><a href="#privacy">Конфиденциальность</a><a href="tel:+79135829533">Позвонить</a></nav>
     </div>
   </div>
 </footer>
 
 <script>
-// NAV scroll
-const nav = document.getElementById('nav');
+const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
-
-// Burger
-const burger = document.getElementById('burger');
-const mm = document.getElementById('mobile-menu');
-burger.addEventListener('click',()=>{
-  mm.classList.toggle('open');
-  const spans = burger.querySelectorAll('span');
-  if(mm.classList.contains('open')){
-    spans[0].style.transform='rotate(45deg) translate(5px,5px)';
-    spans[1].style.opacity='0';
-    spans[2].style.transform='rotate(-45deg) translate(5px,-5px)';
-  } else {
-    spans.forEach(s=>{s.style.transform='';s.style.opacity='';});
-  }
-});
-mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-  mm.classList.remove('open');
-  burger.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity='';});
-}));
-
-// Pricing tabs
-document.querySelectorAll('.ptab').forEach(tab=>{
-  tab.addEventListener('click',()=>{
-    document.querySelectorAll('.ptab').forEach(t=>t.classList.remove('active'));
-    document.querySelectorAll('.pricing-panel').forEach(p=>p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('panel-'+tab.dataset.tab).classList.add('active');
-  });
-});
-
-// Reviews filter
-document.querySelectorAll('.rfilt').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.rfilt').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.filter;
-    document.querySelectorAll('.review-card').forEach(card=>{
-      card.classList.toggle('hidden', f!=='all' && card.dataset.format!==f);
-    });
-  });
-});
-
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const item = btn.closest('.faq-item');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-    if(!isOpen) item.classList.add('open');
-  });
-});
-
-// Scroll reveal
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
-},{threshold:0.12});
+const burger=document.getElementById('burger'),mm=document.getElementById('mobile-menu');
+burger.addEventListener('click',()=>{mm.classList.toggle('open');const s=burger.querySelectorAll('span');if(mm.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)'}else{s.forEach(x=>{x.style.transform='';x.style.opacity=''})}});
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mm.classList.remove('open');burger.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity=''})}));
+document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open')})});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:0.12});
 document.querySelectorAll('.sr').forEach(el=>observer.observe(el));
-
-// Form → Telegram link
-document.getElementById('contactForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const d = new FormData(this);
-  const msg = `Здравствуйте! Хочу узнать свободна ли дата.\nФормат: ${d.get('format')||'—'}\nДата: ${d.get('date')||'—'}\nГостей: ${d.get('guests')||'—'}\nИмя: ${d.get('name')||'—'}\nТелефон: ${d.get('phone')||'—'}\nКомментарий: ${d.get('comment')||'—'}`;
-  const url = 'https://t.me/Vedushchiy_LiminAlexandr?text='+encodeURIComponent(msg);
-  window.open(url,'_blank');
-  this.style.display='none';
-  document.getElementById('formSuccess').style.display='block';
-});
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const msg=`Здравствуйте! Хочу узнать стоимость и свободна ли дата.\nДата выпускного: ${d.get('date')||'—'}\nГород / район: ${d.get('city')||'—'}\nИмя: ${d.get('name')||'—'}\nТелефон: ${d.get('phone')||'—'}\nКомментарий: ${d.get('comment')||'—'}`;window.open('https://t.me/Vedushchiy_LiminAlexandr?text='+encodeURIComponent(msg),'_blank');this.style.display='none';document.getElementById('formSuccess').style.display='block'});
 </script>
 </body>
 </html>
