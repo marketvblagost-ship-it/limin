@@ -1,3 +1,3 @@
-Загрузите ВСЕ файлы из архива в корень GitHub-репозитория с заменой index.html.
-Финальная ссылка MAX в сайте: https://max.ru/362561763
-Проверка после деплоя: https://marketvblagost-ship-it.github.io/limin/?v=110
+Загрузите все файлы из архива в корень репозитория с заменой index.html и max_icon.png.
+Исправлено: иконка MAX теперь заполняет квадрат, как Telegram.
+Проверка: https://marketvblagost-ship-it.github.io/limin/?v=132
