@@ -1,3 +1,4 @@
 Загрузите все файлы из архива в корень репозитория с заменой index.html и max_icon.png.
-Исправлено: иконка MAX теперь заполняет квадрат, как Telegram.
-Проверка: https://marketvblagost-ship-it.github.io/limin/?v=132
+MAX-кнопка на ПК и мобиле теперь полностью в фирменном градиенте MAX без чёрных краёв.
+Кнопка Позвонить зелёная.
+Проверка: https://marketvblagost-ship-it.github.io/limin/?v=134
