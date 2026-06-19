@@ -965,6 +965,46 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
   fill:#fff!important;
 }
 
+
+/* FINAL OVERRIDE: mobile MAX button full brand color */
+@media(max-width:860px){
+  .mobile-contact-bar a.mobile-contact-btn.mobile-contact-max,
+  .mobile-contact-bar .mobile-contact-btn.mobile-contact-max,
+  a.mobile-contact-btn.mobile-contact-max{
+    background:#2F80ED!important;
+    background-image:linear-gradient(135deg,#22D3EE 0%,#2F80ED 45%,#7C3AED 100%)!important;
+    color:#ffffff!important;
+    border-color:rgba(255,255,255,.18)!important;
+    box-shadow:0 10px 24px rgba(47,128,237,.34)!important;
+    overflow:hidden!important;
+  }
+
+  .mobile-contact-bar a.mobile-contact-btn.mobile-contact-max .max-icon-img,
+  .mobile-contact-bar .mobile-contact-btn.mobile-contact-max .max-icon-img,
+  a.mobile-contact-btn.mobile-contact-max .max-icon-img{
+    width:22px!important;
+    height:22px!important;
+    max-width:22px!important;
+    max-height:22px!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:transparent!important;
+    border-radius:0!important;
+    flex:0 0 22px!important;
+  }
+}
+
+/* FINAL OVERRIDE: desktop MAX button full brand color */
+.sticky-contacts a.sticky-contact-btn.sticky-contact-max,
+a.sticky-contact-btn.sticky-contact-max{
+  background:#2F80ED!important;
+  background-image:linear-gradient(135deg,#22D3EE 0%,#2F80ED 45%,#7C3AED 100%)!important;
+  color:#ffffff!important;
+  border-color:rgba(255,255,255,.18)!important;
+  box-shadow:0 12px 28px rgba(47,128,237,.30)!important;
+  overflow:hidden!important;
+}
+
 </style>
 </head>
 <body>
