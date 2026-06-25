@@ -1,4 +1,3 @@
-Загрузите все файлы из архива в корень GitHub-репозитория с заменой.
-Обязательно заменить: index.html и gallery_graduation_outdoor.webp.
-Изменения: фото в галерее 'Выпускной 2025г' заменено на новое; в тарифах 5 часов заменено на 4 часа.
-Проверка: https://marketvblagost-ship-it.github.io/limin/?v=140
+Загрузите все файлы из архива в корень GitHub-репозитория с заменой index.html.
+Добавлена Яндекс.Метрика ID 110140881 и цели: phone_click, telegram_click, max_click, form_submit, cta_click.
+Проверка после деплоя: https://marketvblagost-ship-it.github.io/limin/?v=150
