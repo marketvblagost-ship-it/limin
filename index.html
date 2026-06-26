@@ -1128,9 +1128,64 @@ const nav=document.getElementById('nav');window.addEventListener('scroll',()=>na
 const burger=document.getElementById('burger'),mm=document.getElementById('mobile-menu');burger.addEventListener('click',()=>{mm.classList.toggle('open');const s=burger.querySelectorAll('span');if(mm.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)'}else{s.forEach(x=>{x.style.transform='';x.style.opacity=''})}});mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mm.classList.remove('open');burger.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity=''})}));
 document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open')})});
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});document.querySelectorAll('.sr').forEach(el=>observer.observe(el));
-document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const msg=`Здравствуйте! Хочу узнать стоимость и свободна ли дата.
-Имя: ${d.get('name')||'—'}
-Телефон: ${d.get('phone')||'—'}`;window.open('https://t.me/Vedushchiy_LiminAlexandr?text='+encodeURIComponent(msg),'_blank');this.style.display='none';document.getElementById('formSuccess').style.display='block'});
+const TELEGRAM_FORM_ENDPOINT='https://script.google.com/macros/s/AKfycbwcP5k9FD8E5ZUg1VCnrh-0ZgHJhmp4EAfUPsHCZ6GLAlYv8j0ebigapOLJiZB904h3NQ/exec';
+document.getElementById('contactForm').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const form=this;
+  const button=form.querySelector('.form-submit');
+  const d=new FormData(form);
+  const leadText=`Новая заявка с сайта Александра Лимина
+
+Имя: ${String(d.get('name')||'').trim()||'—'}
+Телефон / Telegram: ${String(d.get('phone')||'').trim()||'—'}
+Страница: ${location.href}
+Источник: ${document.referrer||'—'}`;
+  const payload={
+    source:'limin_landing',
+    name:String(d.get('name')||'').trim(),
+    phone:String(d.get('phone')||'').trim(),
+    page:location.href,
+    referrer:document.referrer||'',
+    submittedAt:new Date().toISOString(),
+    message:leadText,
+    lead_text:leadText,
+    application:leadText
+  };
+  if(!payload.phone){
+    form.reportValidity();
+    return;
+  }
+
+  if(button){
+    button.disabled=true;
+    button.textContent='Отправляем...';
+  }
+
+  try{
+    if(!TELEGRAM_FORM_ENDPOINT){
+      throw new Error('telegram_endpoint_not_configured');
+    }
+    await fetch(TELEGRAM_FORM_ENDPOINT,{
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body:JSON.stringify(payload)
+    });
+    form.style.display='none';
+    document.getElementById('formSuccess').style.display='block';
+  }catch(error){
+    const status=document.getElementById('formSuccess');
+    if(status){
+      status.innerHTML='<h4>Заявка не отправлена</h4><p>Проверьте подключение и попробуйте ещё раз.</p>';
+      status.style.display='block';
+    }
+  }finally{
+    if(button){
+      button.disabled=false;
+      button.textContent='Отправить заявку →';
+    }
+  }
+});
 
 const galleryTrack=document.getElementById('galleryTrack');
 const galleryPrev=document.querySelector('[data-gallery-prev]');
